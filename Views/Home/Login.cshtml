@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+
+@model SkillPointAi.Models.UserProfile
+
+<div class="text-center">
+    <h1 class="display-4">Sign In</h1>
+
+</div>
+
+<form asp-action="SignUpForm" asp-asp-controller="Home">
+    
+    <label> ID </label>
+    <input class="form-control" type="number" Placeholder="0" asp-for="Id" />
+
+   
+
+    <label class="mt-4"> Email </label>
+    <input class="form-control" type="text" Placeholder="enter email" asp-for="Email" step="0.01" />
+
+    <label class=" mt-4"> Password  </label>
+    <input class="form-control" type="text" Placeholder="Enter Password" asp-for="Password" step="0.01" />
+
+    
+
+    <button class="btn btn-primary mt-4" type="submit">OK</button>
+</form>
